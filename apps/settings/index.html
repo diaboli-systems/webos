@@ -1,0 +1,56 @@
+<div class="settings" style="overflow: hidden;">
+    <span class="header">General</span>
+    <table>
+        <tr>
+            <td>User</td>
+            <td id="sign-in">root (Sign-in to Cloud)</td>
+        </tr>
+        <tr>
+            <td>Version</td>
+            <td>0.0.1</td>
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td>Diaboli Systems</td>
+        </tr>
+        <tr>
+            <td>Local</td>
+            <td id="ip"></td>
+        </tr>
+    </table>
+    <hr />
+    <span class="header">Preferences</span>
+    <span>Show Seconds</span>
+    <span>Alert App Exits</span>
+    <button id="storage-capacity">Storage Capacity</button>
+</div>
+
+<style>
+    tr td  {
+        padding: 5px;
+    }
+
+    td#sign-in {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    td#sign-in:hover {
+        text-decoration: underline;
+    }
+
+    span.header {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    div.settings {
+        padding: 10px;
+        overflow: auto;
+    }
+
+    div.settings span {
+        display: block;
+        margin-bottom: 10px;
+    }
+</style>

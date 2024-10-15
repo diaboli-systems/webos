@@ -10,6 +10,6 @@ function time() {
 
     if (second < 10) second = "0" + second;
 
-    document.getElementById("time").innerHTML = `${hour}:${minute}:${second} ${hour > 11 ? "p.m." : "a.m."}`;
+    document.getElementById("time").innerHTML = `${hour}:${minute}${localStorage.getItem("show-seconds") ? `:${second}` : ""} ${hour > 11 ? "pm" : "am"}`;
     setTimeout(time, 1000);
 }
